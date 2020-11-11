@@ -1,0 +1,35 @@
+html,
+body {
+  height: 100vh;
+  min-height: 100vh;
+}
+body {
+  background-size: cover;
+}
+.myNav {
+  margin-top: -20px;
+  padding: 0;
+}
+#landing {
+  background-image: url("Background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+#mainText {
+  margin-top: 30vh;
+}
+#download-button {
+  position: relative;
+  top: 50px;
+}
+
+.whiteText {
+  color: white;
+}
+
+.socialButtons {
+  top: 225px;
+  margin-left: 20px;
+}

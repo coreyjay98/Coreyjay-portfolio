@@ -1,3 +1,4 @@
+/* Whole page */
 html,
 body {
   height: 100vh;
@@ -6,17 +7,51 @@ body {
 body {
   background-size: cover;
 }
+* {
+}
 .myNav {
   margin-top: -20px;
   padding: 0;
 }
+.largeHeader {
+  display: inline-block;
+  width: 20%;
+  max-height: 60px;
+}
+.smallHeader {
+  visibility: hidden;
+  width: 20%;
+  max-height: 60px;
+}
+@media screen and (max-width: 992px) {
+  .largeHeader {
+    display: none;
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: 992px) {
+  .smallHeader {
+    visibility: visible;
+    width: 10%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    overflow-x: hidden;
+    height: 100%;
+  }
+}
+/* Background */
 #landing {
+  height: 100vh;
   background-image: url("Background.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
 }
+/* Index/ Splash page */
 #mainText {
   margin-top: 30vh;
 }
@@ -24,15 +59,18 @@ body {
   position: relative;
   top: 50px;
 }
-
-.whiteText {
-  color: white;
-}
-
+/* Buttons for Socials bottom left */
 .socialButtons {
   position: absolute;
   bottom: 10px;
   margin-left: 20px;
+}
+/* Portfolio Page  */
+.portHeader {
+  font-size: 80px;
+}
+.blackText {
+  color: black;
 }
 
 .portCards {
@@ -40,8 +78,24 @@ body {
   margin-top: 100px;
 }
 .card-title {
-  font-weight: bold;
 }
 .card-image {
   padding: 10px;
+  margin-top: 20px;
+}
+/* Contact Page */
+.googleForm {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+/* About me Page*/
+.aboutDiv {
+  margin-left: 100px;
+  margin-right: 100px;
+  font-size: 20px;
+}
+.aboutHeader {
+  font-weight: bold;
 }

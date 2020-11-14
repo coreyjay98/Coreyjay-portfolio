@@ -28,13 +28,13 @@ body {
   width: 20%;
   max-height: 60px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1000px) {
   .largeHeader {
     display: none;
     visibility: hidden;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1000px) {
   .smallHeader {
     visibility: visible;
     width: 10%;
@@ -66,7 +66,7 @@ body {
 }
 /* Buttons for Socials bottom left */
 .socialButtons {
-  position: absolute;
+  position: fixed;
   bottom: 10px;
   margin-left: 20px;
 }
@@ -82,8 +82,10 @@ body {
   padding: 30px;
   margin-top: 100px;
 }
-.card-title {
+.card {
+  background-color: #657bbd !important;
 }
+
 .card-image {
   padding: 10px;
   margin-top: 20px;
@@ -93,6 +95,7 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 40px;
+  overflow-x: hidden;
 }
 
 /* About me Page*/
@@ -110,4 +113,23 @@ body {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+iframe {
+  width: 80%;
+}
+.resumeButton {
+  margin-top: 200px;
+  display: none !important;
+}
+@media screen and (max-width: 950px) {
+  .PDFframe {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .resumeButton {
+    display: inline-block !important;
+  }
 }

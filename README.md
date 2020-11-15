@@ -23,6 +23,4 @@ This is a preview of my site
 
 ### Questions
 
-link to Github profile
-
 For any additional questions please feel free to reach me at coreyjsamuels@gmail.com

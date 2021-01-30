@@ -50,7 +50,7 @@ body {
 /* Background */
 #landing {
   height: 100vh;
-  background-image: url("Background.jpg");
+  background-image: url('Background.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -84,6 +84,7 @@ body {
 }
 .card {
   background-color: #657bbd !important;
+  min-height: 550px !important;
 }
 
 .card-image {
@@ -92,6 +93,10 @@ body {
 }
 .card-title {
   text-decoration: underline;
+}
+
+.card-content p {
+  font-size: large;
 }
 /* Contact Page */
 .googleForm {
